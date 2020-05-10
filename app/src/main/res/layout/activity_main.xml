@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/balls_back"
+    android:backgroundTintMode="multiply"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F51E5BD3">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0"
+            android:background="#F51E5BD3"
+            android:backgroundTintMode="add"
+            android:gravity="center|center_vertical"
+            android:paddingTop="5dp"
+            android:shadowColor="#9F30B8"
+            android:text="Honnest Lotto"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#D2FF5B5B"
+            android:textColorHint="#9C27B0"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnAbout"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#B45050"
+            android:gravity="center"
+            android:outlineProvider="background"
+            android:text="About"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/btnTenGame"
+        android:layout_width="270dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="0"
+        android:backgroundTint="#00536DFE"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/btn10dlrsgame" />
+
+    <ImageButton
+        android:id="@+id/btnFiftyGame"
+        android:layout_width="270dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0"
+        android:backgroundTint="#00536DFE"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/btn50dlrsgame" />
+
+    <ImageButton
+        android:id="@+id/btnHundredGame"
+        android:layout_width="270dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_weight="0"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#00FFFFFF"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:stateListAnimator="@android:anim/bounce_interpolator"
+        app:srcCompat="@drawable/btn99dlrsgame" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCollectMoney"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:background="#E43E88D4"
+            android:onClick="onWithdrawal"
+            android:text="Withdrawal Cash"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+    </LinearLayout>
+</LinearLayout>
